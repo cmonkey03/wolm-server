@@ -5,6 +5,7 @@ require 'date'
   User.create(
     username: Faker::Internet.username(6..15),
     password: Faker::Internet.password(9, 31),
+    email: Faker::Internet.email,
     zipcode: Faker::Address.zip,
     bio: Faker::Hipster.paragraph(1),
     # administrator: false
