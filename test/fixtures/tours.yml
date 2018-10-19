@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  start_time: 2018-10-19 10:49:40
+  end_time: 2018-10-19 10:49:40
+  price: 1
+
+two:
+  start_time: 2018-10-19 10:49:40
+  end_time: 2018-10-19 10:49:40
+  price: 1
