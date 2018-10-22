@@ -8,7 +8,7 @@ require 'date'
     email: Faker::Internet.email,
     zipcode: Faker::Address.zip,
     bio: Faker::Hipster.paragraph(1),
-    # administrator: false
+    admin: false
   )
 end
 
@@ -45,7 +45,7 @@ tours.each do |tour|
 end
 
 tour_incrementor = 1
-paid_boolean = true
+# paid_boolean = true
 
 User.all.each do |user|
   Reservation.create(
