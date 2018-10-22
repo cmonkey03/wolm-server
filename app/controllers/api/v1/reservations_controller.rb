@@ -1,4 +1,5 @@
 class Api::V1::ReservationsController < ApplicationController
+  skip_before_action :authorized, only: [:index]
   before_action :find_reservation, only: [:destroy]
 
   def index
