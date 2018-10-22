@@ -4,6 +4,8 @@ Rails.application.routes.draw do
       resources :users, only: [:index, :create, :update]
       resources :tours, only: [:index, :create, :update]
       resources :reservations, only: [:index, :create, :destroy]
+      post '/login', to: 'auth#create'
+      get '/profile', to: 'users#profile'
     end
   end
 end
