@@ -6,6 +6,7 @@ class User < ApplicationRecord
 
   validates :username, uniqueness: { case_sensitive: false }
   validates :username, length: { within: 5..16 }
+  validates :email, format: { with: URI::MailTo::EMAIL_REGEXP }
   validates :zipcode, numericality: { only_integer: true, greater_than: 0}
   validates :zipcode, length: { is: 5 }
   validates :bio, length: { maximum: 200 }

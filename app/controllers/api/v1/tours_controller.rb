@@ -1,5 +1,6 @@
 class Api::V1::ToursController < ApplicationController
-  before_action :find_tour, only: [:update]
+  skip_before_action :authorized, only: [:index]
+  # before_action :find_tour, only: [:update]
 
   def index
     @tours = Tour.all
@@ -12,8 +13,8 @@ class Api::V1::ToursController < ApplicationController
       params.require(:tour).permit(:start_time, :end_time, :price)
     end
 
-    def find_tour
-      @tour = Tour.find(params[:id])
-    end
+    # def find_tour
+    #   @tour = Tour.find(params[:id])
+    # end
 
 end
