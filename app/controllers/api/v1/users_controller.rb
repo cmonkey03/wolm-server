@@ -16,19 +16,17 @@ class Api::V1::UsersController < ApplicationController
     if @user.valid?
       render json: { user: UserSerializer.new(@user) }, status: :created
     else
-      render json: { error: 'failed to create user' }, status: :not_acceptable
+      render json: { error: @user.errors }, status: :not_acceptable
     end
   end
 
   def update
-    @user = User.find_by_id(user_params[:id])
-    byebug
-    # @user = User.create(user_params)
-    # if @user.valid?
-    #   render json: { user: UserSerializer.new(@user) }, status: :created
-    # else
-    #   render json: { error: 'failed to create user' }, status: :not_acceptable
-    # end
+    @user.update(user_params)
+    if @user.valid?
+      render json: { user: UserSerializer.new(@user) }, status: :accepted
+    else
+      render json: { error: @user.errors }, status: :not_acceptable
+    end
   end
 
   private
