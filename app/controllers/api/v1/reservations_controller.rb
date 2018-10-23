@@ -20,6 +20,19 @@ class Api::V1::ReservationsController < ApplicationController
   end
 end
 
+def destroy
+  @reservation
+  @reservation.destroy
+  if @reservation.destroyed?
+    render status: 200, json: {
+      message: "Reservation successfully cancelled.",
+      reservation: @reservation
+    }.to_json
+  else
+    render json: { errors: @reservation.errors.full_messages }, status: :unprocessible_enttity
+  end
+end
+
   private
 
     def reservation_params
