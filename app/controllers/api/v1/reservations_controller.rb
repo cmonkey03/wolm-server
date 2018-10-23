@@ -7,6 +7,19 @@ class Api::V1::ReservationsController < ApplicationController
     render json: @reservations
   end
 
+  def create
+  @reservation = Reservation.create(reservation_params)
+  if @reservation.valid?
+    render status: :accepted, json: {
+      message: "Your spot has been reserved!",
+      reservation: @reservation,
+      tour: @reservation.tour
+    }.to_json
+  else
+    render json: { errors: @reservation.errors.full_messages }, status: :unprocessible_entity
+  end
+end
+
   private
 
     def reservation_params
