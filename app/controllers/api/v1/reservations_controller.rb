@@ -16,7 +16,7 @@ class Api::V1::ReservationsController < ApplicationController
       tour: @reservation.tour
     }.to_json
   else
-    render json: { errors: @reservation.errors.full_messages }, status: :unprocessible_entity
+    render json: { errors: @reservation.errors.full_messages }, status: :not_acceptable
   end
 end
 
@@ -29,7 +29,7 @@ def destroy
       reservation: @reservation
     }.to_json
   else
-    render json: { errors: @reservation.errors.full_messages }, status: :unprocessible_enttity
+    render json: { errors: @reservation.errors.full_messages }, status: :not_acceptable
   end
 end
 
