@@ -25,11 +25,11 @@ class Api::V1::ToursController < ApplicationController
   #   end
   # end
   #
-  # private
-  #
-  #   def tour_params
-  #     params.require(:tour).permit(:start_time, :end_time, :price)
-  #   end
+  private
+
+    def tour_params
+      params.require(:tour).permit(:start_time, :end_time, :price)
+    end
 
     # def find_tour
     #   @tour = Tour.find(params[:id])
