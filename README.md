@@ -1,4 +1,4 @@
-![WOLM API JSON Example](https://github.com/cmonkey03/wolm-server/blob/add-readme/app/assets/images/api-example.png)
+![WOLM API JSON Example](https://github.com/cmonkey03/wolm-server/blob/master/app/assets/images/api-example.png)
 
 # Website of Lower Manhattan API
 This is the backend for WOLM, a website where users can view tours, signup and make a reservation and request to be an administrator to view data and create tours.
