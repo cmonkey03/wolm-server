@@ -1,6 +1,6 @@
 
-# ZombieRoad backend
-This is a single player side scrolling game. Guide the puppy down ZombieRoad and avoid getting infected by zombies!
+# Website of Lower Manhattan API
+This is the backend for WOLM, a website where users can view tours, signup and make a reservation and request to be an administrator to view data and create tours.
 
 ## Motivation
 The purpose of this app was to become familiar with vanilla JS and event listeners. The backend is a simple Rails API that records the players' scores.
