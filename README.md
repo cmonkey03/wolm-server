@@ -23,7 +23,8 @@ OAuth
      - [WOLM reservations](https://wolm-server.herokuapp.com/api/v1/reservations)
 2. To interact with the live demo application please visit:
      - [WOLM app](https://wolm-app.herokuapp.com)
-     - Signup or login in username: "wolmadmin" and password: "wolmadmin"
+     - Signup or login in with username: "wolmadmin" and password: "wolmadmin"
+![WOLM API JSON Example](https://github.com/cmonkey03/wolm-server/app/assets/images/api-example.png)
 
 ## Local Setup
 1. Clone down this repo and run `bundle install`.
