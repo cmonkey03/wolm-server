@@ -34,12 +34,12 @@ Signup or login in username: "wolmadmin" and password: "wolmadmin"
 - Now, visit the [ZombieRoad client](https://github.com/cmonkey03/ZombieRoad) and follow the setup instructions to get the ZombieRoad app's frontend running.
 
 ## Contribute
-Thanks for your interest in contributing to ZombieRoad!
+Thanks for your interest in contributing to WOLM!
 
-The following is a set of guidelines for contributing to the ZombieRoad app backend.
+The following is a set of guidelines for contributing to the WOLM app backend.
 
 ### Issues
-Before submitting a new issue ensure that one has not already been created by reviewing the [open issues](https://github.com/tristramjones/ZombieRoadBackend/issues). If your bug is unique to the currently open issues, submit a new one [here](https://github.com/tristramjones/ZombieRoadBackend/issues/new).
+Before submitting a new issue ensure that one has not already been created by reviewing the [open issues](https://github.com/cmonkey03/wolm-server/issues). If your bug is unique to the currently open issues, submit a new one [here](https://github.com/cmonkey03/wolm-server/issues/new).
 
 #### Write detailed information
 Detailed information is very helpful to understand an issue.
