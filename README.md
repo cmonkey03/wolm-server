@@ -15,6 +15,12 @@ Postgres
 - Validations for all three tables
 - Authentication with OAuth
 
+## Live Demo
+- To view the JSON data for this API, visit a live demo at:
+- https://wolm-server.herokuapp.com/api/v1/users
+- https://wolm-server.herokuapp.com/api/v1/tours
+- https://wolm-server.herokuapp.com/api/v1/reservations
+
 ## Setup
 - Clone down this repo and run `bundle install`.
 - Run `rails db:migrate` to setup the database.
