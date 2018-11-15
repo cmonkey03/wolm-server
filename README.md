@@ -18,12 +18,12 @@ OAuth
 
 ## Live Demo
 1. To view the JSON data for this API, visit the live demo at:
-- [WOLM users](https://wolm-server.herokuapp.com/api/v1/users)
-- [WOLM tours](https://wolm-server.herokuapp.com/api/v1/tours)
-- [WOLM reservations](https://wolm-server.herokuapp.com/api/v1/reservations)
+     - [WOLM users](https://wolm-server.herokuapp.com/api/v1/users)
+     - [WOLM tours](https://wolm-server.herokuapp.com/api/v1/tours)
+     - [WOLM reservations](https://wolm-server.herokuapp.com/api/v1/reservations)
 2. To interact with the live demo application please visit:
-- [WOLM app](https://wolm-app.herokuapp.com)
-- Signup or login in username: "wolmadmin" and password: "wolmadmin"
+     - [WOLM app](https://wolm-app.herokuapp.com)
+     - Signup or login in username: "wolmadmin" and password: "wolmadmin"
 
 ## Local Setup
 1. Clone down this repo and run `bundle install`.
