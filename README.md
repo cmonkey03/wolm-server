@@ -3,18 +3,22 @@
 This is the backend for WOLM, a website where users can view tours, signup and make a reservation and request to be an administrator to view data and create tours.
 
 ## Motivation
-The purpose of this app was to become familiar with vanilla JS and event listeners. The backend is a simple Rails API that records the players' scores.
+The purpose of this application was to build a React/Rails application from scratch as a solo project. This API follows RESTful conventions to allow the client to execute CRUD actions for users, tours and reservations.
 
 ## Tech used
 Rails
 Postgres
 
 ## Features
-- User of serializers to render JSON data
+- Serializers to render JSON data
 - CORS enabled to secure http requests
+- Validations for all three tables
+- Authentication with OAuth
 
 ## Setup
 - Clone down this repo and run `bundle install`.
+- Run `rails db:migrate` to setup the database.
+- Run `rails db:seed` to seed the database with tours, users and reservations.
 - Once this has completed and all dependencies are installed, run `rails s`.
 - Visit [http://localhost:3000/](http://localhost:3000/). You'll only see the Rails welcome screen but this indicates that the http request was successful and the API is ready to serve the client.
 - Now, visit the [ZombieRoad client](https://github.com/cmonkey03/ZombieRoad) and follow the setup instructions to get the ZombieRoad app's frontend running.
