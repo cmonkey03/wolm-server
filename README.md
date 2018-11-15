@@ -17,21 +17,21 @@ OAuth
 - Authentication with OAuth
 
 ## Live Demo
-- To view the JSON data for this API, visit the live demo at:
-* https://wolm-server.herokuapp.com/api/v1/users
-* https://wolm-server.herokuapp.com/api/v1/tours
-* https://wolm-server.herokuapp.com/api/v1/reservations
-- To interact with the live demo application please visit:
-* https://wolm-app.herokuapp.com
-* Signup or login in username: "wolmadmin" and password: "wolmadmin"
+1. To view the JSON data for this API, visit the live demo at:
+- [WOLM users](https://wolm-server.herokuapp.com/api/v1/users)
+- [WOLM tours](https://wolm-server.herokuapp.com/api/v1/tours)
+- [WOLM reservations](https://wolm-server.herokuapp.com/api/v1/reservations)
+2. To interact with the live demo application please visit:
+- [WOLM app](https://wolm-app.herokuapp.com)
+- Signup or login in username: "wolmadmin" and password: "wolmadmin"
 
 ## Local Setup
-- Clone down this repo and run `bundle install`.
-- Run `rails db:migrate` to setup the database.
-- Run `rails db:seed` to seed the database with tours, users and reservations.
-- Once this has completed and all dependencies are installed, run `rails s`.
-- Visit [http://localhost:3000/](http://localhost:3000/). You'll only see the Rails welcome screen but this indicates that the http request was successful and the API is ready to serve the client.
-- Now, visit the [WOLM client](https://github.com/cmonkey03/wolm-client) and follow the setup instructions to get the WOLM app's frontend running.
+1. Clone down this repo and run `bundle install`.
+2. Once this has completed and all dependencies are installed, run `rails db:migrate` to setup the database.
+3. Run `rails db:seed` to seed the database with tours, users and reservations.
+4. Run `rails s`.
+5. Visit [http://localhost:3000/](http://localhost:3000/). You'll only see the Rails welcome screen but this indicates that the http request was successful and the API is ready to serve the client.
+6. Now, visit the [WOLM client](https://github.com/cmonkey03/wolm-client) and follow the setup instructions to get the WOLM app's frontend running.
 
 ## Contribute
 Thanks for your interest in contributing to WOLM!
