@@ -6,8 +6,9 @@ This is the backend for WOLM, a website where users can view tours, signup and m
 The purpose of this application was to build a React/Rails application from scratch as a solo project. This API follows RESTful conventions to allow the client to execute CRUD actions for users, tours and reservations.
 
 ## Tech used
-Rails
-Postgres
+Rails,
+Postgres,
+OAuth
 
 ## Features
 - Serializers to render JSON data
@@ -16,10 +17,13 @@ Postgres
 - Authentication with OAuth
 
 ## Live Demo
-- To view the JSON data for this API, visit a live demo at:
-- https://wolm-server.herokuapp.com/api/v1/users
-- https://wolm-server.herokuapp.com/api/v1/tours
-- https://wolm-server.herokuapp.com/api/v1/reservations
+- To view the JSON data for this API, visit the live demo at:
+https://wolm-server.herokuapp.com/api/v1/users
+https://wolm-server.herokuapp.com/api/v1/tours
+https://wolm-server.herokuapp.com/api/v1/reservations
+- To interact with the live demo application please visit:
+https://wolm-app.herokuapp.com
+Signup or login in username: "wolmadmin" and password: "wolmadmin"
 
 ## Setup
 - Clone down this repo and run `bundle install`.
