@@ -3,7 +3,7 @@ class Api::V1::ToursController < ApplicationController
   # before_action :find_tour, only: [:update]
 
   def index
-    @tours = Tour.all
+    @tours = Tour.tours_by_start_time
     render json: @tours
   end
 

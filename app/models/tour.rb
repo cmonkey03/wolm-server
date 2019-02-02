@@ -18,4 +18,8 @@ class Tour < ApplicationRecord
     end
   end
 
+  def self.tours_by_start_time
+    Tour.all.sort_by &:start_time
+  end
+
 end
