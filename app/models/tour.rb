@@ -18,4 +18,8 @@ class Tour < ApplicationRecord
     end
   end
 
+  def order_tours
+    
+  end
+
 end
