@@ -28,7 +28,7 @@ class Api::V1::ToursController < ApplicationController
   private
 
     def tour_params
-      params.require(:tour).permit(:start_time, :end_time, :price)
+      params.require(:tour).permit(:start_time, :end_time, :description, :price)
     end
 
     # def find_tour

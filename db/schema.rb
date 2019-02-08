@@ -31,7 +31,7 @@ ActiveRecord::Schema.define(version: 2019_02_07_022512) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.text "description"
-    t.string "picture"
+    t.string "image_url"
   end
 
   create_table "users", force: :cascade do |t|
