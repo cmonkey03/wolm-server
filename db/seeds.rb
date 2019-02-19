@@ -14,28 +14,33 @@ end
 
 tours = [
   {
-    start_time: DateTime.new(2018, 11, 3, 18),
-    end_time: DateTime.new(2018, 11, 3, 21),
+    start_time: DateTime.new(2019, 11, 3, 18),
+    end_time: DateTime.new(2019, 11, 3, 21),
+    description: Faker::Hipster.paragraph(2),
     price: 20,
   },
   {
-    start_time: DateTime.new(2018, 11, 7, 18),
-    end_time: DateTime.new(2018, 11, 7, 21),
+    start_time: DateTime.new(2019, 11, 7, 18),
+    end_time: DateTime.new(2019, 11, 7, 21),
+    description: Faker::Hipster.paragraph(2),
     price: 15,
   },
   {
-    start_time: DateTime.new(2018, 11, 10, 18),
-    end_time: DateTime.new(2018, 11, 10, 21),
+    start_time: DateTime.new(2019, 11, 10, 18),
+    end_time: DateTime.new(2019, 11, 10, 21),
+    description: Faker::Hipster.paragraph(2),
     price: 20,
   },
   {
-    start_time: DateTime.new(2018, 11, 17, 18),
-    end_time: DateTime.new(2018, 11, 17, 21),
+    start_time: DateTime.new(2019, 11, 17, 18),
+    end_time: DateTime.new(2019, 11, 17, 21),
+    description: Faker::Hipster.paragraph(2),
     price: 15,
   },
   {
-    start_time: DateTime.new(2018, 11, 21, 18),
-    end_time: DateTime.new(2018, 11, 21, 21),
+    start_time: DateTime.new(2019, 11, 21, 18),
+    end_time: DateTime.new(2019, 11, 21, 21),
+    description: Faker::Hipster.paragraph(2),
     price: 20,
   }
 ]
