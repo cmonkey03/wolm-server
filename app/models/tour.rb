@@ -2,10 +2,11 @@ class Tour < ApplicationRecord
   has_many :reservations
   has_many :users, through: :reservations
 
-  validates :price, numericality: { only_integer: true, greater_than: 0 }
-  validates :description, length: { minimum: 30, maximum: 200 }
   validate :start_time, :startFuture?
   validate :end_time, :endFuture?
+  validates :price, numericality: { only_integer: true, greater_than: 0 }
+  validates :image_url, length: { minimum: 5, maximum: 200 }
+  validates :description, length: { minimum: 30, maximum: 200 }
 
   def startFuture?
     if start_time < ::DateTime.current
