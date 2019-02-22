@@ -5,6 +5,7 @@ class Tour < ApplicationRecord
   validate :start_time, :startFuture?
   validate :end_time, :endFuture?
   validates :price, numericality: { only_integer: true, greater_than: 0 }
+  validates :image_url, length: { minimum: 5, maximum: 200 }
   validates :description, length: { minimum: 30, maximum: 200 }
 
   def startFuture?
