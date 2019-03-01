@@ -8,30 +8,30 @@ class Api::V1::ReservationsController < ApplicationController
   end
 
   def create
-  @reservation = Reservation.create(reservation_params)
-  if @reservation.valid?
-    render status: :accepted, json: {
-      message: "Your spot has been reserved!",
-      reservation: @reservation,
-      tour: @reservation.tour
-    }.to_json
-  else
-    render json: { errors: @reservation.errors.full_messages }, status: :not_acceptable
+    @reservation = Reservation.create(reservation_params)
+    if @reservation.valid?
+      render status: :accepted, json: {
+        message: "Your spot has been reserved!",
+        reservation: @reservation,
+        tour: @reservation.tour
+      }.to_json
+    else
+      render json: { errors: @reservation.errors.full_messages }, status: :not_acceptable
+    end
   end
-end
 
-def destroy
-  @reservation
-  @reservation.destroy
-  if @reservation.destroyed?
-    render status: 200, json: {
-      message: "Reservation successfully cancelled.",
-      reservation: @reservation
-    }.to_json
-  else
-    render json: { errors: @reservation.errors.full_messages }, status: :not_acceptable
+  def destroy
+    @reservation
+    @reservation.destroy
+    if @reservation.destroyed?
+      render status: 200, json: {
+        message: "Reservation successfully cancelled.",
+        reservation: @reservation
+      }.to_json
+    else
+      render json: { errors: @reservation.errors.full_messages }, status: :not_acceptable
+    end
   end
-end
 
   private
 
